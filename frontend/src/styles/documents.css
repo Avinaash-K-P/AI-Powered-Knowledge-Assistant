@@ -1,0 +1,91 @@
+.document-container {
+    padding: 30px;
+}
+
+.document-header {
+    margin-bottom: 30px;
+}
+
+.document-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.document-subtitle {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.upload-card,
+.table-card {
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.card-title {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.search-section {
+    margin-bottom: 25px;
+}
+
+.search-section .input-group-text {
+    background: #fff;
+}
+
+.table thead {
+    background: #f8fafc;
+}
+
+.table thead th {
+    color: #334155;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+.badge {
+    font-size: 13px;
+    padding: 7px 12px;
+}
+
+.btn-sm {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.btn-sm svg {
+    font-size: 14px;
+}
+
+.table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.upload-card input[type="file"] {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .document-container {
+        padding: 20px;
+    }
+
+    .document-title {
+        font-size: 24px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+}

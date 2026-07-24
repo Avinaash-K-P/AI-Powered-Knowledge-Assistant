@@ -1,0 +1,200 @@
+/* =====================================================
+   Chat Ask Page
+===================================================== */
+
+.chat-page {
+    background: #f8fafc;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* =====================================================
+   Header
+===================================================== */
+
+.chat-header {
+    margin-bottom: 25px;
+}
+
+.chat-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.chat-subtitle {
+    color: #6b7280;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* =====================================================
+   Chat Card
+===================================================== */
+
+.chat-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.chat-card .card-header {
+    background: #111827;
+    color: white;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.chat-card .card-body {
+    background: white;
+    padding: 20px;
+}
+
+/* =====================================================
+   Conversation Area
+===================================================== */
+
+.chat-body {
+    height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+    scroll-behavior: smooth;
+}
+
+.chat-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+/* =====================================================
+   Message Layout
+===================================================== */
+
+.message {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message.ai {
+    justify-content: flex-start;
+}
+
+/* =====================================================
+   Chat Bubble
+===================================================== */
+
+.message-content {
+    max-width: 75%;
+    padding: 14px 18px;
+    border-radius: 16px;
+    word-break: break-word;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+.message.user .message-content {
+    background: #2563eb;
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+.message.ai .message-content {
+    background: #f3f4f6;
+    color: #374151;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #e5e7eb;
+}
+
+/* =====================================================
+   Time
+===================================================== */
+
+.message-time {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 6px;
+}
+
+/* =====================================================
+   Input Area
+===================================================== */
+
+.chat-input {
+    margin-top: 20px;
+}
+
+.chat-input .form-control {
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    padding: 12px 15px;
+}
+
+.chat-input .form-control:focus {
+    box-shadow: none;
+    border-color: #2563eb;
+}
+
+.send-btn {
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+/* =====================================================
+   Empty State
+===================================================== */
+
+.empty-chat {
+    text-align: center;
+    color: #6b7280;
+    padding: 80px 20px;
+}
+
+.empty-chat i {
+    font-size: 60px;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   Loading
+===================================================== */
+
+.typing-indicator {
+    color: #6b7280;
+    font-style: italic;
+    padding: 10px 15px;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .chat-page {
+        padding: 15px;
+    }
+
+    .chat-body {
+        height: 400px;
+    }
+
+    .message-content {
+        max-width: 90%;
+    }
+
+    .chat-title {
+        font-size: 1.5rem;
+    }
+
+}

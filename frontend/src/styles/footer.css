@@ -1,0 +1,23 @@
+.app-footer {
+    margin-left: 260px;
+
+    background: #e2e8f0;
+    color: #475569;
+
+    border-top: 1px solid #cbd5e1;
+
+    padding: 15px 20px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    box-sizing: border-box;
+}
+
+.app-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #64748b;
+}

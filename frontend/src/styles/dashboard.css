@@ -1,0 +1,141 @@
+/* Dashboard */
+
+.dashboard-container {
+    padding: 0px;
+}
+
+.page-container {
+    width: 100%;
+}
+
+/* Dashboard Header */
+
+.dashboard-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.dashboard-subtitle {
+    font-size: 15px;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+/* KPI Cards */
+
+.kpi-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.kpi-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.kpi-title {
+    font-size: 15px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.kpi-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Section Titles */
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+/* Quick Action Cards */
+
+.action-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+}
+
+.action-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.action-title {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.action-description {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Feature Overview */
+
+.feature-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #334155;
+}
+
+.feature-item:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.feature-icon {
+    color: #16a34a;
+    font-size: 18px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .dashboard-title {
+        font-size: 26px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .kpi-value {
+        font-size: 28px;
+    }
+
+}

@@ -1,0 +1,164 @@
+/* =====================================================
+   Chat History Page
+===================================================== */
+
+.chat-history-page {
+    background: #f8fafc;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* =====================================================
+   Header
+===================================================== */
+
+.chat-history-page h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.chat-history-page p {
+    color: #6b7280;
+}
+
+/* =====================================================
+   Cards
+===================================================== */
+
+.chat-history-page .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.chat-history-page .card-header {
+    background: #111827;
+    color: white;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+/* =====================================================
+   Search
+===================================================== */
+
+.chat-history-page .form-control {
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+}
+
+.chat-history-page .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: none;
+}
+
+/* =====================================================
+   Table
+===================================================== */
+
+.chat-history-page table {
+    margin-bottom: 0;
+}
+
+.chat-history-page thead th {
+    background: #f3f4f6;
+    color: #374151;
+    font-weight: 600;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.chat-history-page tbody td {
+    vertical-align: middle;
+}
+
+.chat-history-page tbody tr {
+    transition: background .2s ease;
+}
+
+.chat-history-page tbody tr:hover {
+    background: #f9fafb;
+}
+
+/* =====================================================
+   View Button
+===================================================== */
+
+.chat-history-page .btn-outline-primary {
+    border-radius: 8px;
+    transition: all .2s ease;
+}
+
+.chat-history-page .btn-outline-primary:hover {
+    transform: translateY(-1px);
+}
+
+.question-cell {
+    max-width: 450px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* =====================================================
+   Modal
+===================================================== */
+
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-header {
+    background: #111827;
+    color: white;
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+/* =====================================================
+   Modal Fields
+===================================================== */
+
+.modal-body label {
+    color: #374151;
+    font-weight: 600;
+}
+
+.modal-body .form-control {
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    white-space: pre-wrap;
+}
+
+/* =====================================================
+   Footer
+===================================================== */
+
+.modal-footer {
+    border-top: none;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width:768px){
+
+    .chat-history-page{
+        padding:15px;
+    }
+
+    .chat-history-page h2{
+        font-size:1.6rem;
+    }
+
+}

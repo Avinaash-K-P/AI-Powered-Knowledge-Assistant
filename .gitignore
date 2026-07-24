@@ -1,0 +1,9 @@
+vector_index/
+backend/vector_index/
+uploads/
+backend/uploads/
+.env
+*.env
+venv/
+__pycache__/
+*.pyc

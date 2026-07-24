@@ -1,0 +1,20 @@
+.dashboard-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f8fafc;
+}
+
+.dashboard-body {
+    flex: 1;
+    display: flex;
+}
+
+.dashboard-content {
+    flex: 1;
+    margin-left: 260px;
+    padding: 25px;
+    min-height: calc(100vh - 70px);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
