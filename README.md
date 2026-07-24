@@ -42,7 +42,7 @@ A full-stack web application that allows users to upload documents and ask AI-po
 
 ## Database Tables
 
-- Used MySQL Workbench
+- Integrated with MySQL Workbench
 
 ### users
 
@@ -131,9 +131,6 @@ Create a `.env` file and add the required environment variables:
 
 ```env
 DATABASE_URL=mysql+pymysql://root:password@localhost:3306/knowledge_assistant
-SECRET_KEY=your_secret_key
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=60
 GEMINI_API_KEY=your_gemini_api_key
 VECTOR_DB_PATH=./vector_index
 ```
@@ -275,7 +272,7 @@ backend/
 |   |-- db/
 |   |   |-- database.py
 |   |
-|   |-- ml/
+|   |-- ai/
 |   |   |-- chunking.py
 |   |   |-- gemini_client.py
 |   |   |-- rag.py
@@ -341,7 +338,6 @@ frontend/
 |   |   |-- ChatAsk.jsx
 |   |   |-- ChatHistory.jsx
 |   |   |-- Profile.jsx
-|   |   |-- NotFound.jsx
 |   |
 |   |-- services/
 |   |   |-- api.js
